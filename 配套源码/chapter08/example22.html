@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>求数组元素的平均值</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+var arr = [6, 48, 21, 35, 11];      //定义数组
+var len = arr.length;               //获取数组元素个数
+var sum = avg = 0;                  //声明保存总数的变量sum以及平均值的变量avg并赋初始值为0
+for(var i = 0; i < len; i++){
+	sum = sum + arr[i];             //将每次获取到的数组元素的值与变量sum相加
+}
+avg = sum / len;
+console.log(avg);
+</script>
+</html>
+
+
+
+

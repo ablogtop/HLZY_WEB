@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>二维数组</title>
+</head>
+<body>
+姓名 数学 语文 英语
+<hr/>
+<script type="text/javascript">
+var students,i,j;
+students=new Array();
+students[0]=new Array("张三",76,90,80);
+students[1]=new Array("李四",89,97,86);
+students[2]=new Array("王五",90,78,88);
+for(i in students){		
+	for(j in students[i]){
+			document.write(students[i][j] +"\t");
+	}
+    document.write("<br/>");
+}	
+</script>
+</body>
+</html>
+
+
+
+

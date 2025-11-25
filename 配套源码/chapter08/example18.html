@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>删除属性</title>
+</head>
+<body>
+<script type="text/javascript">
+var box;
+box=new Object();
+box.name="小王";
+box.age = 18;
+document.write("删除前："+box.name+"的年龄是<b>"+box.age+"</b>");
+document.write("<br>删除box对象的age属性成功返回："+delete box.age);
+document.write("<br>删除后："+box.name+"的年龄是<b>"+box.age+"</b>");
+</script>
+</body>
+</html>
+
+

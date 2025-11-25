@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>定时器的使用</title>
+<script language="javascript">
+function showTime(){
+	var now=new Date();
+	var dataTime=now.toLocaleTimeString();
+	time = document.getElementById("time");
+ 	time.innerHTML = dataTime;
+}
+var timer=window.setInterval("showTime()",1000);
+function clear(){
+	window.clearInterval(timer);
+	window.status="已取消定时器";
+}
+</script>
+</head>
+<body>
+<div id="time"></div>
+<p><a href="javascript:clear()">取消定时器</a></p>
+</body>
+</html>
+
+
+
+
